@@ -8,6 +8,10 @@ const nextTranslateConfig = {
     '/travel': ['travelpage'],
     '/accommodation': ['accommodationpage'],
     '/preboda': ['prebodapage'],
+    '/wedding': ['weddingpage'],
+    '/logistics': ['logisticspage'],
+    '/dresscode': ['dresscodepage'],
+    '/giftlist': ['giftlistpage'],
   },
 };
 
