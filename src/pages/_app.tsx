@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
-import AppHeader from 'components/AppHeader/AppHeader';
-import Footer from 'components/Footer';
 import theme from 'theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -19,10 +17,17 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CssBaseline />
       {/* Pass pageContext to the _document though the renderPage enhancer
             to render collected styles on server side. */}
-      <AppHeader />
       <Component {...pageProps} />
-      <Footer />
     </ThemeProvider>
   );
 }
 export default MyApp;
+
+// TODO
+// Rest of pages
+// Change languages
+// Google Analytics
+// Check nsprogress is working
+// Update styles to use theme.spacing
+// Mobile hamburger styles
+// iPad nav working?
