@@ -5,6 +5,8 @@ const nextTranslateConfig = {
     '*': ['appheader', 'appheaderdrawer'],
     '/': ['homepage'],
     '/about': ['about'],
+    '/travel': ['travelpage'],
+    '/accommodation': ['accommodationpage'],
   },
 };
 
