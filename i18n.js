@@ -1,5 +1,5 @@
 const nextTranslateConfig = {
-  locales: ['en', 'ca', 'es'],
+  locales: ['en', 'es'],
   defaultLocale: 'en',
   pages: {
     '*': ['appheader', 'appheaderdrawer'],
