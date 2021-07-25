@@ -7,6 +7,7 @@ const nextTranslateConfig = {
     '/about': ['about'],
     '/travel': ['travelpage'],
     '/accommodation': ['accommodationpage'],
+    '/preboda': ['prebodapage'],
   },
 };
 
