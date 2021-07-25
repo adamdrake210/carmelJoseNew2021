@@ -1,0 +1,28 @@
+import { useEffect } from 'react';
+import type { AppProps } from 'next/app';
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import AppHeader from 'components/AppHeader/AppHeader';
+import Footer from 'components/Footer';
+import theme from 'theme';
+
+function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    // Remove the server-side injected CSS.
+    const jssStyles = document.querySelector('#jss-server-side');
+    if (jssStyles && jssStyles.parentElement) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
+  }, []);
+  return (
+    <ThemeProvider theme={theme}>
+      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+      <CssBaseline />
+      {/* Pass pageContext to the _document though the renderPage enhancer
+            to render collected styles on server side. */}
+      <AppHeader />
+      <Component {...pageProps} />
+      <Footer />
+    </ThemeProvider>
+  );
+}
+export default MyApp;
