@@ -1,15 +1,16 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import AppShell from 'containers/AppShell';
-import Homepage from 'components/Homepage';
+import DresscodePage from 'components/DresscodePage';
 
-const Home = () => {
+const Dresscode = () => {
   const { t } = useTranslation();
+
   return (
-    <AppShell title={t('appheader:home')}>
-      <Homepage />
+    <AppShell title={t('dresscodepage:dresscodetitle')}>
+      <DresscodePage />
     </AppShell>
   );
 };
 
-export default Home;
+export default Dresscode;

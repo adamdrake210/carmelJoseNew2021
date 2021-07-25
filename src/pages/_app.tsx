@@ -24,10 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp;
 
 // TODO
-// Rest of pages
-// Change languages
 // Google Analytics
-// Check nsprogress is working
 // Update styles to use theme.spacing
 // Mobile hamburger styles
 // iPad nav working?

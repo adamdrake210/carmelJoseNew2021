@@ -1,15 +1,16 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import AppShell from 'containers/AppShell';
-import Homepage from 'components/Homepage';
+import LogisticsPage from 'components/LogisticsPage';
 
-const Home = () => {
+const Wedding = () => {
   const { t } = useTranslation();
+
   return (
-    <AppShell title={t('appheader:home')}>
-      <Homepage />
+    <AppShell title={t('logisticspage:logisticsstitle')}>
+      <LogisticsPage />
     </AppShell>
   );
 };
 
-export default Home;
+export default Wedding;
