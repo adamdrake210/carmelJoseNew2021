@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
 import useTranslation from 'next-translate/useTranslation';
+import setLanguage from 'next-translate/setLanguage';
 
 import Router from 'next/router';
 import NProgress from 'nprogress';
@@ -41,15 +42,8 @@ const useStyles = makeStyles(theme => ({
       fontSize: '1.1em',
     },
   },
-  // TODO Remove as probably not needed
-  // mobileAppHeader: {
-  //   [theme.breakpoints.down('md')]: {
-  //     display: 'flex',
-  //     alignItems: 'center',
-  //   },
-  // },
   flag: {
-    width: '40px',
+    width: '35px',
   },
 }));
 
@@ -63,31 +57,20 @@ function AppHeader() {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  const handleFlagChange = () => {
-    setIsSpanishFlag(!isSpanishFlag);
-  };
-
   return (
     <>
       <AppBar className={classes.appBar}>
         <Toolbar>
           <div className={classes.grow}>
-            {/* <Link href="/search">
-                <a>RSVP</a>
-              </Link> */}
-            <Button
-              onClick={() => {
-                console.log('lang: ', lang);
-                handleFlagChange;
-              }}>
-              {/* {t('change-locale')} */}
-              {isSpanishFlag && <img className={classes.flag} src="./static/spain.png" />}
-              {!isSpanishFlag && <img className={classes.flag} src="./../static/uk.png" />}
+            <Button onClick={async () => await setLanguage('es')}>
+              <img className={classes.flag} src="./../static/es.png" />
+            </Button>
+            <Button onClick={async () => await setLanguage('en')}>
+              <img className={classes.flag} src="./../static/en.png" />
             </Button>
           </div>
           <Hidden mdDown implementation="css">
             <DesktopNavigation />
-
             <div className={classes.grow} />
           </Hidden>
           <Hidden mdUp implementation="css">
