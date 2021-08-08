@@ -25,4 +25,3 @@ export default MyApp;
 
 // TODO
 // Google Analytics
-// bug! when refreshing page it throws error - find out why

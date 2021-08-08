@@ -8,7 +8,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
-import useTranslation from 'next-translate/useTranslation';
 import setLanguage from 'next-translate/setLanguage';
 
 import Router from 'next/router';
