@@ -1,24 +1,24 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import useTranslation from 'next-translate/useTranslation';
 
 const useStyles = makeStyles(theme => ({
   title: {
-    padding: '20px 0px',
+    padding: theme.spacing(2, 0),
     color: '#fff',
   },
   subtitle: {
-    padding: '20px 0px',
+    padding: theme.spacing(2, 0),
     color: '#fff',
     textDecoration: 'underline',
   },
   text: {
-    padding: '15px 0px 5px',
+    padding: theme.spacing(2, 0, 1),
     color: '#fff',
   },
   boldtext: {
-    padding: '15px 0px 5px',
+    padding: theme.spacing(2, 0, 1),
     color: '#fff',
     fontWeight: 700,
   },

@@ -34,6 +34,7 @@ const useStyles = makeStyles(theme => ({
   icon: {
     color: '#53504B',
     fontSize: '30px',
+    marginRight: theme.spacing(1),
   },
   avatarContainer: {
     margin: '32px auto',

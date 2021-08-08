@@ -21,21 +21,21 @@ const useStyles = makeStyles(theme => ({
     },
   },
   title: {
-    padding: '20px 0px',
+    padding: theme.spacing(2, 0),
     color: '#fff',
   },
   subtitle: {
-    padding: '20px 0px',
+    padding: theme.spacing(2, 0),
     color: '#fff',
     textDecoration: 'underline',
   },
   text: {
-    padding: '15px 0px 5px',
+    padding: theme.spacing(2, 0, 1),
     color: '#fff',
   },
   hoteltext: {
     color: '#fff',
-    padding: '0 0 20px',
+    padding: theme.spacing(0, 0, 2),
   },
   links: {
     color: '#fff',
@@ -68,13 +68,7 @@ function AccommodationPage() {
       <Typography variant="body1" className={classes.text}>
         {t('accommodationpage:metroinfo')}
       </Typography>
-      <MetroMap
-        isMarkerShown
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `400px`, width: '100%', margin: '25px 0' }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
+      <MetroMap isMarkerShown />
       <Typography variant="body1" className={classes.text}>
         {t('accommodationpage:para1')}
       </Typography>
