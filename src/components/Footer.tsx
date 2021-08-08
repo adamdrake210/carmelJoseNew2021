@@ -1,17 +1,15 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import { Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '25px 0',
+    padding: theme.spacing(2, 0),
   },
-});
+}));
 
 function Footer() {
   const classes = useStyles();

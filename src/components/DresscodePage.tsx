@@ -7,29 +7,29 @@ const useStyles = makeStyles(theme => ({
   content: {
     alignItems: 'flex-start',
     display: 'flex',
-    padding: '0px 0 70px',
+    padding: theme.spacing(0, 0, 9),
     flexDirection: 'column',
     width: '900px',
     fontFamily: theme.typography.fontFamily,
     margin: '0 auto',
     height: '100vh',
     [theme.breakpoints.down('sm')]: {
-      fontSize: '1em',
-      padding: '0 0 4em',
+      fontSize: '1rem',
+      padding: theme.spacing(0, 0, 4),
       width: '100%',
     },
   },
   title: {
-    padding: '20px 0px',
+    padding: theme.spacing(2, 0),
     color: '#fff',
   },
   subtitle: {
-    padding: '20px 0px 0px',
+    padding: theme.spacing(2, 0, 0),
     color: '#fff',
     textDecoration: 'underline',
   },
   text: {
-    padding: '15px 0px 5px',
+    padding: theme.spacing(2, 0, 1),
     color: '#fff',
   },
 }));

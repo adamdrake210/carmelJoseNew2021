@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     alignItems: 'flex-start',
     display: 'flex',
-    padding: '0px 0 70px',
+    padding: theme.spacing(0, 0, 9),
     flexDirection: 'column',
     width: '900px',
     fontFamily: theme.typography.fontFamily,
@@ -16,13 +16,13 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
     [theme.breakpoints.down('sm')]: {
       fontSize: '1em',
-      padding: '0 0 4em',
+      padding: theme.spacing(0, 0, 4),
       height: '100%',
       width: '100%',
     },
   },
   title: {
-    padding: '20px 0px',
+    padding: theme.spacing(2, 0),
     color: '#fff',
     alignItems: 'center',
     margin: '0 auto',
@@ -32,12 +32,12 @@ const useStyles = makeStyles(theme => ({
     },
   },
   info: {
-    padding: '15px 0px 5px',
+    padding: theme.spacing(2, 0, 1),
     color: '#fff',
   },
   infoSecond: {
     color: '#fff',
-    marginBottom: '2em',
+    marginBottom: theme.spacing(2),
   },
   boldlinks: {
     color: '#fff',
@@ -57,20 +57,20 @@ const useStyles = makeStyles(theme => ({
   image: {
     width: '100%',
     maxWidth: '300px',
-    margin: '10px',
+    margin: theme.spacing(1),
     border: 'solid 2px #fff',
   },
   rsvpButton: {
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
-    padding: 16,
+    padding: theme.spacing(2),
   },
   buttonLink: {
     textDecoration: 'none',
   },
   button: {
-    fontSize: '2em',
+    fontSize: '2rem',
     color: '#fff',
     borderColor: '#fff',
   },
