@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
@@ -43,15 +43,13 @@ const useStyles = makeStyles(theme => ({
     },
   },
   flag: {
-    width: '35px',
+    width: '32px',
   },
 }));
 
 function AppHeader() {
   const classes = useStyles();
-  const { t, lang } = useTranslation();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isSpanishFlag, setIsSpanishFlag] = useState(true);
 
   const handleDrawerToggle = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -69,20 +67,20 @@ function AppHeader() {
               <img className={classes.flag} src="./../static/en.png" />
             </Button>
           </div>
-          <Hidden mdDown implementation="css">
+          <Hidden smDown implementation="css">
             <DesktopNavigation />
             <div className={classes.grow} />
           </Hidden>
           <Hidden mdUp implementation="css">
-            <Link href="/">
-              <a>
+            <Box display="flex" height="100%" justifyContent="center" alignItems="center">
+              <Link href="/">
                 <Typography variant="h5">The Wedding</Typography>
-              </a>
-            </Link>
-            <div className={classes.grow} />
-            <IconButton color="inherit" aria-label="Open drawer" onClick={handleDrawerToggle}>
-              <MenuIcon />
-            </IconButton>
+              </Link>
+              <div className={classes.grow} />
+              <IconButton color="inherit" aria-label="Open drawer" onClick={handleDrawerToggle}>
+                <MenuIcon />
+              </IconButton>
+            </Box>
           </Hidden>
         </Toolbar>
       </AppBar>
