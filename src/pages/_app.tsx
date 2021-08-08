@@ -28,3 +28,4 @@ export default MyApp;
 // Update styles to use theme.spacing
 // Mobile hamburger styles
 // iPad nav working?
+// bug! when refreshing page it throws error - find out why

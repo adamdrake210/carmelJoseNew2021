@@ -14,5 +14,8 @@ module.exports = withBundleAnalyzer(
 
       return config;
     },
+    env: {
+      googleMapsApi: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    },
   })
 );
