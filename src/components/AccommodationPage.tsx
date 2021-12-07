@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import useTranslation from 'next-translate/useTranslation';
+import Trans from 'next-translate/Trans';
+
 import MetroMap from './GoogleMaps/MetroMap';
 
 const useStyles = makeStyles(theme => ({
@@ -82,42 +84,51 @@ function AccommodationPage() {
         {t('accommodationpage:hotel1')}
       </Typography>
       <Typography variant="body1" className={classes.hoteltext}>
-        {t('accommodationpage:hotelinfo1')}{' '}
-        <a
-          href="https://www.booking.com/hotel/es/petit-palace-santa-barbara.es.html"
-          className={classes.links}
-          target="_blank">
-          Booking.com
-        </a>
-      </Typography>
-      <Typography variant="body1" className={classes.hoteltext}>
-        {t('accommodationpage:hotelinfo1-2')}{' '}
-        <a
-          href="https://www.petitpalacesantabarbara.com/"
-          className={classes.links}
-          target="_blank">
-          Get Your Discount!
-        </a>
+        <Trans
+          i18nKey="accommodationpage:hotelinfo1"
+          components={[
+            <a
+              className={classes.links}
+              target="_blank"
+              href="https://www.petitpalacesantabarbara.com/es/"
+            />,
+            <b />,
+          ]}
+        />
       </Typography>
 
       <Typography variant="body1" className={classes.title}>
         {t('accommodationpage:hotel3')}
       </Typography>
       <Typography variant="body1" className={classes.hoteltext}>
-        {t('accommodationpage:hotelinfo3')}{' '}
-        <a href="https://hotelurso.com/" className={classes.links} target="_blank">
-          More Info Here
-        </a>
+        <Trans
+          i18nKey="accommodationpage:hotelinfo3"
+          components={[
+            <a
+              className={classes.links}
+              target="_blank"
+              href="https://www.hoteloneshotfortuny07.com/"
+            />,
+            <b />,
+          ]}
+        />
       </Typography>
       <Typography variant="body1" className={classes.hoteltext}>
-        {t('accommodationpage:extrahotels1')}{' '}
-        <a href="https://goo.gl/maps/XueywcDsuAQ4t81WA" className={classes.links} target="_blank">
-          NH Madrid Alonso Martínez
-        </a>
-        {t('accommodationpage:extrahotels2')}{' '}
-        <a href="https://goo.gl/maps/5hwNEkXgq48zdnWF7" className={classes.links} target="_blank">
-          Hotel Sardinero Madrid
-        </a>
+        <Trans
+          i18nKey="accommodationpage:extrahotels1"
+          components={[
+            <a
+              className={classes.links}
+              target="_blank"
+              href="https://www.nh-hoteles.es/booking/step1-rates?fini=26/12/2021&fout=27/12/2021&nchilds1=0&nadults1=2&hotelId=ESMD.EMBAJ&divisa=EUR&roomcode=STDDBL&rateplan=SD1_7-14D&regimen=14"
+            />,
+            <a
+              className={classes.links}
+              target="_blank"
+              href="https://www.hotelsardineromadrid.com/bookingstep1/?idtokenprovider=100376568&checkin=20%2F12%2F2021&nights=1&lang=es&hsri=02040&adults=2&children=0&ages=&babies=0&googlecrawler=false&utm_source=hotelfinder&utm_medium=cpa&utm_campaign=GHACP&bookingSource=GoogleCPA&currency=EUR&rates=NzczMXwyNTIwOHwxNjA2NTNiMHw4MTE4fDIxNzEzMQ"
+            />,
+          ]}
+        />
       </Typography>
     </div>
   );

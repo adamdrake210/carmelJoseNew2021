@@ -8,10 +8,8 @@
   "para2": "Además, hay muchos apartamentos que se puede alquiler por la zona y por toda la ciudad – ver las opciones disponibles en Airbnb, Booking.com y otras páginas webs. ",
   "hoteltitle": "Hoteles",
   "hotel1": "1. Hotel Petit Palace Santa Bárbara",
-  "hotelinfo1": "Haced vuestra reserva a través de Booking.com si sois socios Genius para conseguir un descuento de un 10%.",
-  "hotelinfo1-2": "Si no, reservad a través de la página web del propio hotel e introducid el código BODACARMELYJOSE para un descuento de un 15%.",
-  "hotel3": "2. Hotel Urso",
-  "hotelinfo3": "Podéis llamar al hotel (+34 914 444 458) o enviarles un correo (info@hotelurso.com) mencionando que venís al enlace de Carmel y Jose para obtener un descuento de un 10% sobre la tarifa que aparece en su web para esas fechas ",
-  "extrahotels1": "Otros hoteles buenos por la zona incluyen el ",
-  "extrahotels2": " y el"
+  "hotelinfo1": "Reservad a través de <0>la página web del propio hotel</0> e introducid el código <1>BODACARMELYJOSE</1> para un descuento de un 17%.",
+  "hotel3": "2. Hotel One Shot Fortuny 07",
+  "hotelinfo3": "Reservad a través de <0>la página web del propio hotel</0> e introducid el código <1>BODA250622</1> para un descuento de un 10%. ",
+  "extrahotels1": "Otros hoteles buenos por la zona incluyen el <0>NH Madrid Alonso Martínez</0> y el <1>Hotel Sardinero Madrid</1>"
 }
