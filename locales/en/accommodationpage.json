@@ -3,15 +3,13 @@
   "accomnotice": "Those of you who live in Madrid or know the city well can skip this section",
   "weddingplace1": "The wedding ceremony and celebrations will take place outside of Madrid at ",
   "weddingplace2": "Accommodation options near the venue are limited and so we recommend that you stay in the city centre. There are so many hotels and other accommodation options in Madrid that you really will be spoilt for choice.",
-  "metroinfo": "We recommend that you stay near Alonso Martínez metro station and we have negotiated discounts at several establishments in that area, see below. We will provide buses to and from the wedding venue, which will pick up from and drop off at Alonso Martinez:",
-  "para1": "Alonso Martinez is located in the middle of three classic Madrilenian neighbourhoods (Chamberí, Malasaña and Chueca). It is home to a lovely plaza (Plaza de Santa Bárbara) and is just 20 minutes on foot from the Retiro Park, the Thyssen Art Gallery and Puerta del Sol, and 30 minutes from the Prado and Reina Sofia art galleries.",
+  "metroinfo": "We recommend that you stay near the Plaza de Alonso Martínez and we have negotiated discounts at several establishments in that area, see below. We will provide buses to and from the wedding venue, which will pick up from and drop off at the Plaza de Alonso Martinez:",
+  "para1": "The Plaza de Alonso Martinez is located in the middle of three classic Madrilenian neighbourhoods (Chamberí, Malasaña and Chueca). It is adjacent to another lovely plaza (Plaza de Santa Bárbara) and is just 20 minutes on foot from the Retiro Park, the Thyssen Art Gallery and Puerta del Sol, and 30 minutes from the Prado and Reina Sofia art galleries.",
   "para2": "There are also plenty of apartments to rent in the area and throughout the city – refer to listings on Airbnb, Booking.com and similar websites.",
   "hoteltitle": "Hotels",
   "hotel1": "1. Hotel Petit Palace Santa Bárbara",
-  "hotelinfo1": "Book through Booking.com if you are a Genius member for a 10% discount.",
-  "hotelinfo1-2": "Otherwise, book through the hotel’s website and use the code BODACARMELYJOSE for a 15% discount.",
-  "hotel3": "2. Hotel Urso",
-  "hotelinfo3": "Call the hotel (+34 914 444 458) or send them an email (info@hotelurso.com) informing them that you are attending the wedding of Carmel and Jose for a 10% discount on the tariff listed on their website for your chosen dates.",
-  "extrahotels1": "Other nearby hotel options include ",
-  "extrahotels2": " and"
+  "hotelinfo1": "Book through the <0>hotel’s website</0> and use the code <1>BODACARMELYJOSE</1> for a 17% discount.",
+  "hotel3": "2. Hotel One Shot Fortuny 07",
+  "hotelinfo3": "Book through the <0>hotel's website</0> and use the code <1>BODA250622</1> for a 10% discount. ",
+  "extrahotels1": "Other good local hotel options include <0>NH Madrid Alonso Martínez</0> and <1>Hotel Sardinero Madrid</1>."
 }
