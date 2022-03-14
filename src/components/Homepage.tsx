@@ -97,7 +97,7 @@ function Homepage() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://docs.google.com/forms/d/11pZcPWKo3caH2a0TCqnYfbIUmK3IFiLKQkqG4D2xNLE/edit"
+          href="https://forms.gle/uJ3dMN8Mo6kDB1uq9"
           className={classes.buttonLink}>
           <Button variant="outlined" className={classes.button}>
             {t('homepage:rsvp')}
