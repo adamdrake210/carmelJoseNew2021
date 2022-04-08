@@ -114,7 +114,7 @@ function Homepage() {
           href="https://docs.google.com/document/d/1SDNXT1H9w2uHJBe7b_Nu7xBQcIKGK3L6tKWc_uc_TVI/edit"
           target="_blank"
           className={classes.boldlinks}>
-          GOOGLEDOC LINK
+          https://tinyurl.com/yahy5d9m
         </a>
       </Typography>
       <Typography variant="body1" className={classes.info}>
