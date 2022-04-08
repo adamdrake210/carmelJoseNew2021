@@ -109,7 +109,13 @@ function Homepage() {
         {t('homepage:para1')}
       </Typography>
       <Typography variant="body1" className={classes.info}>
-        {t('homepage:para2')}
+        {t('homepage:para2')}{' '}
+        <a
+          href="https://docs.google.com/document/d/1SDNXT1H9w2uHJBe7b_Nu7xBQcIKGK3L6tKWc_uc_TVI/edit"
+          target="_blank"
+          className={classes.boldlinks}>
+          GOOGLEDOC LINK
+        </a>
       </Typography>
       <Typography variant="body1" className={classes.info}>
         {t('homepage:para3')}

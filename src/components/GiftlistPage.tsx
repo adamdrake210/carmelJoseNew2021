@@ -33,6 +33,13 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2, 0, 1),
     color: '#fff',
   },
+  links: {
+    color: '#fff',
+    fontWeight: 700,
+    '&:hover': {
+      color: 'rgba(0,0,0, 0.5)',
+    },
+  },
 }));
 
 function GiftlistPage() {
@@ -45,7 +52,10 @@ function GiftlistPage() {
         {t('giftlistpage:giftlisttitle')}
       </Typography>
       <Typography variant="body1" className={classes.text}>
-        {t('giftlistpage:para1')}
+        {t('giftlistpage:para1')}{' '}
+        <a className={classes.links} target="_blank" href="https://tinyurl.com/3md57y86">
+          https://tinyurl.com/3md57y86
+        </a>
       </Typography>
       <Typography variant="body1" className={classes.text}>
         {t('giftlistpage:para2')}
