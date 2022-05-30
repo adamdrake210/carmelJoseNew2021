@@ -53,8 +53,11 @@ function GiftlistPage() {
       </Typography>
       <Typography variant="body1" className={classes.text}>
         {t('giftlistpage:para1')}{' '}
-        <a className={classes.links} target="_blank" href="https://tinyurl.com/3md57y86">
-          https://tinyurl.com/3md57y86
+        <a
+          className={classes.links}
+          target="_blank"
+          href="https://www.elcorteingles.es/bodamas_ssl/invitados/celebrantes_acceso.asp?promo=01&idioma=010">
+          Gift List
         </a>
       </Typography>
       <Typography variant="body1" className={classes.text}>
